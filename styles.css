@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(220, 191, 191);
+}
+
+.selections {
+    display: flex;
+    justify-content: center; 
+}
+
+.selection {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer; 
+    transition: 100ms;
+    font-size: 2rem;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
+
+.results {
+    display: grid;
+    margin-top: 2rem;
+    justify-content: center;
+    justify-items: center;
+     /* 2 column grid that is equal in size (1fr) */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: .5rem;
+    color: #333;
+}
+
+.result-selection {
+    opacity: .5;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 1rem;
+}
